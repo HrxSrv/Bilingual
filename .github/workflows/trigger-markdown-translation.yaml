@@ -10,7 +10,9 @@ on:
       - 'docs/**'
       - 'README.md'
       - '.github/workflows/trigger-translation.yml'
-
+permissions:
+  contents: write 
+  
 jobs:
   debug-info:
     runs-on: ubuntu-latest
