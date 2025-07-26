@@ -1,13 +1,13 @@
 {
   "Readme.ja.md": {
-    "hash": "1ba2392d799ab046c7652f0a151d4379",
-    "commit": "96c2294cbe0273bd3f0c5479366274cfbfb09743",
-    "timestamp": "2025-07-26T13:12:22.835731"
+    "hash": "a5b4e465144f29b9dbf397e3e0a6a5e2",
+    "commit": "106974b997f9a225549082bc62ae8670407820ff",
+    "timestamp": "2025-07-26T13:35:27.146001"
   },
   "Readme.md": {
-    "hash": "582611ab00d1a04b7f1732aa9da447cb",
-    "commit": "96c2294cbe0273bd3f0c5479366274cfbfb09743",
-    "timestamp": "2025-07-26T13:12:22.835720",
+    "hash": "b1681cebadc856fa01c1194cfcc37a79",
+    "commit": "106974b997f9a225549082bc62ae8670407820ff",
+    "timestamp": "2025-07-26T13:35:27.145990",
     "source_file": "Readme.ja.md"
   },
   "docs/test.ja.md": {

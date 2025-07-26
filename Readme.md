@@ -1,1 +1,1 @@
-This is a README file for testing purposes and is necessary for the test.
+This is a test version to check if the Japanese to English workflow is functioning properly.
