@@ -10,8 +10,10 @@ on:
       - 'docs/**'
       - 'README.md'
       - '.github/workflows/trigger-translation.yml'
+
 permissions:
-  contents: write 
+  contents: write
+  pull-requests: write
   
 jobs:
   debug-info:
@@ -23,9 +25,10 @@ jobs:
           echo "Ref: ${{ github.ref }}"
           echo "Before: ${{ github.event.before }}"
           echo "After: ${{ github.event.after }}"
-          echo "Modified Files: ${{ github.event.head_commit.modified }}"
-          echo "Added Files: ${{ github.event.head_commit.added }}"
-          echo "Removed Files: ${{ github.event.head_commit.removed }}"
+          echo "Commit Hash: ${{ github.sha }}"
+          echo "Modified Files: ${{ toJson(github.event.commits[0].modified) }}"
+          echo "Added Files: ${{ toJson(github.event.commits[0].added) }}"
+          echo "Removed Files: ${{ toJson(github.event.commits[0].removed) }}"
 
   check-markdown-changes:
     needs: debug-info
@@ -33,7 +36,9 @@ jobs:
     outputs:
       has_changes: ${{ steps.check.outputs.has_changes }}
       is_initial_setup: ${{ steps.check.outputs.is_initial_setup }}
+      changed_files: ${{ steps.check.outputs.changed_files }}
       deleted_files: ${{ steps.check.outputs.deleted_files }}
+      skip_translation: ${{ steps.check.outputs.skip_translation }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -43,38 +48,69 @@ jobs:
       - name: Check for changes
         id: check
         run: |
+          # Check if commit message contains [skip-translation]
+          COMMIT_MSG="${{ github.event.head_commit.message }}"
+          if [[ "$COMMIT_MSG" == *"[skip-translation]"* ]]; then
+            echo "skip_translation=true" >> $GITHUB_OUTPUT
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "Skipping translation due to [skip-translation] flag"
+            exit 0
+          fi
+          
+          echo "skip_translation=false" >> $GITHUB_OUTPUT
+          
           # Check if this is the first commit with the workflow file
           if [[ "${{ github.event_name }}" == "push" && "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]]; then
             echo "is_initial_setup=true" >> $GITHUB_OUTPUT
             echo "has_changes=true" >> $GITHUB_OUTPUT
             echo "deleted_files=" >> $GITHUB_OUTPUT
+            echo "changed_files=" >> $GITHUB_OUTPUT
             exit 0
           else
-            # Check for modified or added markdown files
-            CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }})
-            echo "Changed files: $CHANGED_FILES"
-            MD_FILES=$(echo "$CHANGED_FILES" | grep -E '\.md$|^docs/' || true)
-            echo "Markdown files: $MD_FILES"
+            # Get changed files from commits
+            CHANGED_FILES=""
+            for commit in $(git rev-list ${{ github.event.before }}..${{ github.event.after }}); do
+              FILES=$(git diff-tree --no-commit-id --name-only -r $commit | grep -E '\.md$|\.ja\.md$' || true)
+              if [[ -n "$FILES" ]]; then
+                if [[ -n "$CHANGED_FILES" ]]; then
+                  CHANGED_FILES="$CHANGED_FILES,$FILES"
+                else
+                  CHANGED_FILES="$FILES"
+                fi
+              fi
+            done
+            
+            # Remove duplicates and format
+            CHANGED_FILES=$(echo "$CHANGED_FILES" | tr ',' '\n' | sort -u | tr '\n' ',' | sed 's/,$//')
+            
+            echo "Changed markdown files: $CHANGED_FILES"
+            
             # Check for deleted markdown files
-            DELETED_FILES=$(git diff --name-only --diff-filter=D ${{ github.event.before }} ${{ github.event.after }} | grep -E '\.md$|^docs/' || true)
+            DELETED_FILES=$(git diff --name-only --diff-filter=D ${{ github.event.before }} ${{ github.event.after }} | grep -E '\.md$|\.ja\.md$' || true)
+            DELETED_FILES=$(echo "$DELETED_FILES" | tr '\n' ',' | sed 's/,$//')
+            
             echo "Deleted files: $DELETED_FILES"
-            if [[ -n "$MD_FILES" ]]; then
+            
+            if [[ -n "$CHANGED_FILES" ]] || [[ -n "$DELETED_FILES" ]]; then
               echo "has_changes=true" >> $GITHUB_OUTPUT
             else
               echo "has_changes=false" >> $GITHUB_OUTPUT
             fi
+            
+            echo "changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT
             echo "deleted_files=$DELETED_FILES" >> $GITHUB_OUTPUT
             echo "is_initial_setup=false" >> $GITHUB_OUTPUT
-            exit 0
           fi
 
   trigger-markdown-translation:
     needs: check-markdown-changes
-    if: needs.check-markdown-changes.outputs.has_changes == 'true' || needs.check-markdown-changes.outputs.is_initial_setup == 'true'
+    if: needs.check-markdown-changes.outputs.has_changes == 'true' && needs.check-markdown-changes.outputs.skip_translation == 'false'
     uses: hrxsrv/bilingual-github/.github/workflows/translate-markdown.yml@main
     secrets:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     with:
       is_initial_setup: ${{ needs.check-markdown-changes.outputs.is_initial_setup == 'true' }}
-      changed_files: ${{ github.event.head_commit.modified }}
-      deleted_files: ${{ needs.check-markdown-changes.outputs.deleted_files }} 
+      changed_files: ${{ needs.check-markdown-changes.outputs.changed_files }}
+      deleted_files: ${{ needs.check-markdown-changes.outputs.deleted_files }}
+      commit_hash: ${{ github.sha }}
