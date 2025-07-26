@@ -1,0 +1,78 @@
+name: Trigger Markdown Translation
+
+on:
+  push:
+    branches:
+      - main
+      - master  
+    paths:
+      - '**.md'
+      - 'docs/**'
+      - 'README.md'
+      - '.github/workflows/trigger-translation.yml'
+
+jobs:
+  debug-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug Information
+        run: |
+          echo "Event Name: ${{ github.event_name }}"
+          echo "Ref: ${{ github.ref }}"
+          echo "Before: ${{ github.event.before }}"
+          echo "After: ${{ github.event.after }}"
+          echo "Modified Files: ${{ github.event.head_commit.modified }}"
+          echo "Added Files: ${{ github.event.head_commit.added }}"
+          echo "Removed Files: ${{ github.event.head_commit.removed }}"
+
+  check-markdown-changes:
+    needs: debug-info
+    runs-on: ubuntu-latest
+    outputs:
+      has_changes: ${{ steps.check.outputs.has_changes }}
+      is_initial_setup: ${{ steps.check.outputs.is_initial_setup }}
+      deleted_files: ${{ steps.check.outputs.deleted_files }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  
+
+      - name: Check for changes
+        id: check
+        run: |
+          # Check if this is the first commit with the workflow file
+          if [[ "${{ github.event_name }}" == "push" && "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]]; then
+            echo "is_initial_setup=true" >> $GITHUB_OUTPUT
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "deleted_files=" >> $GITHUB_OUTPUT
+            exit 0
+          else
+            # Check for modified or added markdown files
+            CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }})
+            echo "Changed files: $CHANGED_FILES"
+            MD_FILES=$(echo "$CHANGED_FILES" | grep -E '\.md$|^docs/' || true)
+            echo "Markdown files: $MD_FILES"
+            # Check for deleted markdown files
+            DELETED_FILES=$(git diff --name-only --diff-filter=D ${{ github.event.before }} ${{ github.event.after }} | grep -E '\.md$|^docs/' || true)
+            echo "Deleted files: $DELETED_FILES"
+            if [[ -n "$MD_FILES" ]]; then
+              echo "has_changes=true" >> $GITHUB_OUTPUT
+            else
+              echo "has_changes=false" >> $GITHUB_OUTPUT
+            fi
+            echo "deleted_files=$DELETED_FILES" >> $GITHUB_OUTPUT
+            echo "is_initial_setup=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+  trigger-markdown-translation:
+    needs: check-markdown-changes
+    if: needs.check-markdown-changes.outputs.has_changes == 'true' || needs.check-markdown-changes.outputs.is_initial_setup == 'true'
+    uses: rimoapp/bilingual-github/.github/workflows/translate-markdown.yml@main
+    secrets:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    with:
+      is_initial_setup: ${{ needs.check-markdown-changes.outputs.is_initial_setup == 'true' }}
+      changed_files: ${{ github.event.head_commit.modified }}
+      deleted_files: ${{ needs.check-markdown-changes.outputs.deleted_files }} 
