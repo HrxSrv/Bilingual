@@ -1,2 +1,1 @@
-This is a test doc to check japanese transaltion
-testssssssssgg
+This is for testing whether creating a file in Japanese triggers English.
