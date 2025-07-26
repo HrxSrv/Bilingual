@@ -1,2 +1,1 @@
-This is a test readme file and is needed to test 
-Lets see if these changes are reflected
+This is a README file for testing purposes and is necessary for the test.
