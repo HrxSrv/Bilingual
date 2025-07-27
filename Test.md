@@ -1,1 +1,0 @@
-This is for testing whether creating a file in Japanese triggers English.
