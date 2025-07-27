@@ -64,5 +64,27 @@
     "hash": "5656dd582fe7e139220c1de16a2ec59e",
     "commit": "ce1ed264185cde03dc52d52ee5b7315fc5f949c2",
     "timestamp": "2025-07-27T19:20:56.719547"
+  },
+  "Test1.ja.md": {
+    "hash": "70037015ba0b3585a7181f717e9a22f3",
+    "commit": "b4c56c2bff4b22c3588daecff30856ef13033c86",
+    "timestamp": "2025-07-27T19:58:10.063765",
+    "source_file": "Test1.md"
+  },
+  "Test1.md": {
+    "hash": "957f1b9492eb644f8b5018f0f5de583f",
+    "commit": "b4c56c2bff4b22c3588daecff30856ef13033c86",
+    "timestamp": "2025-07-27T19:58:10.063776"
+  },
+  "Test2/Test2.ja.md": {
+    "hash": "38da56e849c3a634d9f5040ec8644375",
+    "commit": "b4c56c2bff4b22c3588daecff30856ef13033c86",
+    "timestamp": "2025-07-27T19:58:11.731989",
+    "source_file": "Test2/Test2.md"
+  },
+  "Test2/Test2.md": {
+    "hash": "b2a2729163ce422bdac5ca984e6a95ae",
+    "commit": "b4c56c2bff4b22c3588daecff30856ef13033c86",
+    "timestamp": "2025-07-27T19:58:11.731998"
   }
 }

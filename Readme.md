@@ -1,1 +1,0 @@
-This is a test version to check if the Japanese to English workflow is functioning properly.
