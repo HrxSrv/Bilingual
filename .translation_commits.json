@@ -42,5 +42,16 @@
     "hash": "9314d1a2e5444f9166b98be168363cbe",
     "commit": "25c2322108c34fc7f24b4f86cb1b85eabdabaa3d",
     "timestamp": "2025-07-26T19:02:46.204715"
+  },
+  "Test2.ja.md": {
+    "hash": "6e086eab821d4f659a1baade799fcc11",
+    "commit": "7053acec20e1d0655962154147843c75e7fcbb70",
+    "timestamp": "2025-07-27T07:32:49.822161",
+    "source_file": "Test2.md"
+  },
+  "Test2.md": {
+    "hash": "c0f367ab2c3656111726ba829557b921",
+    "commit": "7053acec20e1d0655962154147843c75e7fcbb70",
+    "timestamp": "2025-07-27T07:32:49.822169"
   }
 }
