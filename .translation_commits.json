@@ -147,5 +147,16 @@
     "hash": "a9d330bfd4ef8cf37a18c2cc21788cee",
     "commit": "bbe551704c9cbb398bbd1c27a02ddcfb183b58bc",
     "timestamp": "2025-07-28T20:28:25.521899"
+  },
+  "Test/TestSub/Test5.ja.md": {
+    "hash": "7193a44f438e5e09c4d5b7486bcfb1d3",
+    "commit": "e02c3b446630afd874d93c2c247b44fc02c995d8",
+    "timestamp": "2025-07-28T20:31:32.640389",
+    "source_file": "Test/TestSub/Test5.en.md"
+  },
+  "Test/TestSub/Test5.en.md": {
+    "hash": "1445c4c1fb27abd9061ada3b30a18b44",
+    "commit": "e02c3b446630afd874d93c2c247b44fc02c995d8",
+    "timestamp": "2025-07-28T20:31:32.640399"
   }
 }
