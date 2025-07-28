@@ -39,9 +39,10 @@
     "source_file": "Test.ja.md"
   },
   "Test.ja.md": {
-    "hash": "9314d1a2e5444f9166b98be168363cbe",
-    "commit": "25c2322108c34fc7f24b4f86cb1b85eabdabaa3d",
-    "timestamp": "2025-07-26T19:02:46.204715"
+    "hash": "a9d330bfd4ef8cf37a18c2cc21788cee",
+    "commit": "3733c4df35f83e9a3ff2055359dceb1c85ad3a95",
+    "timestamp": "2025-07-28T19:03:16.106391",
+    "source_file": "Test.en.md"
   },
   "Test2.ja.md": {
     "hash": "e4d70dc630c9f273fec17242b110ee2f",
@@ -91,5 +92,10 @@
     "hash": "69d0d33814be72544b5ae6d2f4592b77",
     "commit": "fa163c26af1c9071ceb95fd5ec57332efca203fb",
     "timestamp": "2025-07-28T18:51:42.548312"
+  },
+  "Test.en.md": {
+    "hash": "c6ead6b1418aa4044f631f13890d8663",
+    "commit": "3733c4df35f83e9a3ff2055359dceb1c85ad3a95",
+    "timestamp": "2025-07-28T19:03:16.106401"
   }
 }
