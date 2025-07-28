@@ -65,6 +65,15 @@ jobs:
             exit 0
           fi
           
+          # Skip if this is a merge commit (has multiple parents)
+          PARENT_COUNT=$(git rev-list --count --parents ${{ github.sha }} | head -1 | awk '{print NF-1}')
+          if [[ $PARENT_COUNT -gt 1 ]]; then
+            echo "skip_translation=true" >> $GITHUB_OUTPUT
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "Skipping translation - merge commit detected"
+            exit 0
+          fi
+          
           echo "skip_translation=false" >> $GITHUB_OUTPUT
           
           # Determine if this is a PR event
