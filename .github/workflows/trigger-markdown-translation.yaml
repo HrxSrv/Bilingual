@@ -56,12 +56,12 @@ jobs:
       - name: Check for changes
         id: check
         run: |
-          # Check if commit message contains [skip-translation]
+          # Check if commit message contains [skip-translation] or is a merge commit
           COMMIT_MSG="${{ github.event.head_commit.message || github.event.pull_request.title }}"
-          if [[ "$COMMIT_MSG" == *"[skip-translation]"* ]]; then
+          if [[ "$COMMIT_MSG" == *"[skip-translation]"* ]] || [[ "$COMMIT_MSG" == "Merge pull request"* ]] || [[ "$COMMIT_MSG" == "Merge branch"* ]]; then
             echo "skip_translation=true" >> $GITHUB_OUTPUT
             echo "has_changes=false" >> $GITHUB_OUTPUT
-            echo "Skipping translation due to [skip-translation] flag"
+            echo "Skipping translation due to [skip-translation] flag or merge commit"
             exit 0
           fi
           
