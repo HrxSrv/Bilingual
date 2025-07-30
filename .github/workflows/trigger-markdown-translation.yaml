@@ -8,6 +8,8 @@ on:
       - '**.en.md'
       - '**.ja.md'
     paths-ignore:
+      - 'CLAUDE.md'
+      - 'GEMENI.md' 
   push:
     branches:
       - main
@@ -16,7 +18,9 @@ on:
       - '**.md'
       - '**.en.md'
       - '**.ja.md'
-    paths-ignore:   
+    paths-ignore:
+      - 'CLAUDE.md'
+      - 'GEMENI.md''    
 
 permissions:
   contents: write
