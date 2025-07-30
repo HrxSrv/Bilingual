@@ -8,11 +8,8 @@ on:
       - '**.en.md'
       - '**.ja.md'
     paths-ignore:
-      - '.claude/**'
       - 'CLAUDE.md'
-      - 'GEMENI.md'
-      - '.cursor/**'
-      - '.cline/**'  
+      - 'GEMENI.md' 
   push:
     branches:
       - main
@@ -22,11 +19,8 @@ on:
       - '**.en.md'
       - '**.ja.md'
     paths-ignore:
-      - '.claude/**'
       - 'CLAUDE.md'
-      - 'GEMENI.md'
-      - '.cursor/**'
-      - '.cline/**'    
+      - 'GEMENI.md''    
 
 permissions:
   contents: write
