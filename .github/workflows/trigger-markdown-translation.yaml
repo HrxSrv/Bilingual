@@ -7,12 +7,15 @@ on:
       - '**/*.md'
       - '**/*.en.md'
       - '**/*.ja.md'
-    paths-ignore:
-      - '.claude/**'
-      - '.cursor/**'
-      - '.cline/**'
-      - 'CLAUDE.md'
-      - 'GEMENI.md'
+
+      # Exclude entire directories
+      - '!.claude/**'
+      - '!.cursor/**'
+      - '!.cline/**'
+
+      # Exclude specific files
+      - '!CLAUDE.md'
+      - '!GEMENI.md'
  
   push:
     branches:
@@ -22,13 +25,16 @@ on:
       - '**/*.md'
       - '**/*.en.md'
       - '**/*.ja.md'
-    paths-ignore:
-      - '.claude/**'
-      - '.cursor/**'
-      - '.cline/**'
-      - 'CLAUDE.md'
-      - 'GEMENI.md'
 
+      # Exclude entire directories
+      - '!.claude/**'
+      - '!.cursor/**'
+      - '!.cline/**'
+
+      # Exclude specific files
+      - '!CLAUDE.md'
+      - '!GEMENI.md'
+      
 permissions:
   contents: write
   pull-requests: write
