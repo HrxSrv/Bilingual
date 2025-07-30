@@ -7,7 +7,12 @@ on:
       - '**.md'
       - '**.en.md'
       - '**.ja.md'
-      - '.github/workflows/trigger-translation.yml'
+    paths-ignore:
+      - '.claude/**'
+      - 'CLAUDE.md'
+      - 'GEMENI.md'
+      - '.cursor/**'
+      - '.cline/**'  
   push:
     branches:
       - main
@@ -16,7 +21,12 @@ on:
       - '**.md'
       - '**.en.md'
       - '**.ja.md'
-      - '.github/workflows/trigger-translation.yml'
+    paths-ignore:
+      - '.claude/**'
+      - 'CLAUDE.md'
+      - 'GEMENI.md'
+      - '.cursor/**'
+      - '.cline/**'    
 
 permissions:
   contents: write
@@ -134,7 +144,7 @@ jobs:
   trigger-markdown-translation:
     needs: check-markdown-changes
     if: needs.check-markdown-changes.outputs.has_changes == 'true' && needs.check-markdown-changes.outputs.skip_translation == 'false'
-    uses: hrxsrv/bilingual-github/.github/workflows/translate-markdown.yml@main
+    uses: rimoapp/bilingual-github/.github/workflows/translate-markdown.yml@main
     secrets:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
     with:
@@ -144,4 +154,4 @@ jobs:
       commit_hash: ${{ github.sha }}
       is_pr: ${{ needs.check-markdown-changes.outputs.is_pr == 'true' }}
       pr_number: ${{ needs.check-markdown-changes.outputs.pr_number }}
-      target_branch: ${{ needs.check-markdown-changes.outputs.target_branch }}
+      target_branch: ${{ needs.check-markdown-changes.outputs.target_branch }} 
