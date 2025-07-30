@@ -4,6 +4,10 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
   paths:
+    # Include markdown files everywhere else
+    - '**/*.md'
+    - '**/*.en.md'
+    - '**/*.ja.md'
     # Ignore entire .claude/ directory
     - '!.claude/**'
     
@@ -11,10 +15,6 @@ on:
     - '!.cursor/**'
     - '!.cline/**'
   
-    # Include markdown files everywhere else
-    - '**/*.md'
-    - '**/*.en.md'
-    - '**/*.ja.md'
   
     # Explicit file ignores
     - '!CLAUDE.md'
