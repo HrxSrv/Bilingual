@@ -26,17 +26,17 @@ on:
       - main
       - master  
   paths:
+    # Include markdown files everywhere else
+    - '**/*.md'
+    - '**/*.en.md'
+    - '**/*.ja.md'
+  
     # Ignore entire .claude/ directory
     - '!.claude/**'
     
     # Ignore other helper directories
     - '!.cursor/**'
     - '!.cline/**'
-  
-    # Include markdown files everywhere else
-    - '**/*.md'
-    - '**/*.en.md'
-    - '**/*.ja.md'
   
     # Explicit file ignores
     - '!CLAUDE.md'
