@@ -1,13 +1,14 @@
 {
   "Readme.ja.md": {
-    "hash": "2c6cd910b2cbd025e821671f76dc899d",
-    "commit": "b732665b3d97229bc286d4c6e10a5f700ef674a1",
-    "timestamp": "2025-07-28T19:36:29.952482"
+    "hash": "d7a4dacaf4c3374e7dcb2da4eb0182cf",
+    "commit": "0b0d394209031dcd33ef4f9080c61410190ae069",
+    "timestamp": "2025-07-28T20:14:31.321791",
+    "source_file": "Readme.en.md"
   },
   "Readme.md": {
     "hash": "2c6cd910b2cbd025e821671f76dc899d",
-    "commit": "da923e997637d89fd835ba86ab92350fd78f9c30",
-    "timestamp": "2025-07-28T20:12:38.612652"
+    "commit": "0b0d394209031dcd33ef4f9080c61410190ae069",
+    "timestamp": "2025-07-28T20:14:33.010240"
   },
   "docs/test.ja.md": {
     "hash": "d58fb0c4757db4784441e334f1da20fe",
@@ -99,8 +100,8 @@
   },
   "Readme.en.md": {
     "hash": "ab9834703420507a02e9303c9fc11786",
-    "commit": "da923e997637d89fd835ba86ab92350fd78f9c30",
-    "timestamp": "2025-07-28T20:12:38.612640",
+    "commit": "0b0d394209031dcd33ef4f9080c61410190ae069",
+    "timestamp": "2025-07-28T20:14:33.010231",
     "source_file": "Readme.md"
   },
   "Test/Test2.ja.md": {
@@ -147,15 +148,5 @@
     "commit": "bbe551704c9cbb398bbd1c27a02ddcfb183b58bc",
     "timestamp": "2025-07-28T20:28:25.521899"
   },
-  ".claude/test1.ja.md": {
-    "hash": "185fb0867244e17e42512f811a0d50f6",
-    "commit": "496cd2c3999f4419112d42b17385ca8a2e571111",
-    "timestamp": "2025-07-30T19:25:10.096333",
-    "source_file": ".claude/test1.md"
-  },
-  ".claude/test1.md": {
-    "hash": "0b26e313ed4a7ca6904b0e9369e5b957",
-    "commit": "496cd2c3999f4419112d42b17385ca8a2e571111",
-    "timestamp": "2025-07-30T19:25:10.096345"
   }
 }
