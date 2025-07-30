@@ -4,28 +4,30 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
     paths:
-      - '!.claude/**'
-      - '!CLAUDE.md'
-      - '!GEMENI.md'
-      - '!.cursor/**'
-      - '!.cline/**' 
-      - '**.md'
-      - '**.en.md'
-      - '**.ja.md'
+      - '**/*.md'
+      - '**/*.en.md'
+      - '**/*.ja.md'
+    paths-ignore:
+      - '.claude/**'
+      - '.cursor/**'
+      - '.cline/**'
+      - 'CLAUDE.md'
+      - 'GEMENI.md'
  
   push:
     branches:
       - main
       - master  
     paths:
-      - '!.claude/**'
-      - '!CLAUDE.md'
-      - '!GEMENI.md'
-      - '!.cursor/**'
-      - '!.cline/**'    
-      - '**.md'
-      - '**.en.md'
-      - '**.ja.md'
+      - '**/*.md'
+      - '**/*.en.md'
+      - '**/*.ja.md'
+    paths-ignore:
+      - '.claude/**'
+      - '.cursor/**'
+      - '.cline/**'
+      - 'CLAUDE.md'
+      - 'GEMENI.md'
 
 permissions:
   contents: write
