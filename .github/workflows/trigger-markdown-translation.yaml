@@ -4,28 +4,39 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
     paths:
+      # include all markdown variants
+      - '**/*.md'
+      - '**/*.en.md'
+      - '**/*.ja.md'
+    
+      # exclude entire directories
       - '!.claude/**'
+      - '!.cursor/**'
+      - '!.cline/**'
+    
+      # exclude specific files
       - '!CLAUDE.md'
       - '!GEMENI.md'
-      - '!.cursor/**'
-      - '!.cline/**' 
-      - '**.md'
-      - '**.en.md'
-      - '**.ja.md'
+
  
   push:
     branches:
       - main
       - master  
     paths:
+      # include all markdown variants
+      - '**/*.md'
+      - '**/*.en.md'
+      - '**/*.ja.md'
+    
+      # exclude entire directories
       - '!.claude/**'
-      - '!CLAUDE.md'
-      - '!GEMENI.md'
       - '!.cursor/**'
-      - '!.cline/**'    
-      - '**.md'
-      - '**.en.md'
-      - '**.ja.md'
+      - '!.cline/**'
+    
+      # exclude specific files
+      - '!CLAUDE.md'
+      - '!GEMENI.md'    
 
 permissions:
   contents: write
