@@ -86,5 +86,16 @@
     "hash": "26f7a54bc2f70ed784688fcae6cd507d",
     "commit": "c689d63d07ec6641a090d4c565e3da2ed7f60d34",
     "timestamp": "2025-07-30T21:28:53.739292"
+  },
+  ".claude/Test2.ja.md": {
+    "hash": "966bf1da0d67f89b3073f6c569b50296",
+    "commit": "f8c28739ab52ee19e85f913eafb9b3bc7a4c0b23",
+    "timestamp": "2025-07-30T21:30:20.803461",
+    "source_file": ".claude/Test2.en.md"
+  },
+  ".claude/Test2.en.md": {
+    "hash": "2e2b06ac1e439469de65c601622b38af",
+    "commit": "f8c28739ab52ee19e85f913eafb9b3bc7a4c0b23",
+    "timestamp": "2025-07-30T21:30:20.803471"
   }
 }
