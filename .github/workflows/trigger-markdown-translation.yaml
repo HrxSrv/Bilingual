@@ -3,29 +3,44 @@ name: Trigger Markdown Translation
 on:
   pull_request:
     types: [opened, synchronize, reopened]
-    paths:
-      - '**.md'
-      - '**.en.md'
-      - '**.ja.md'
-      - '!.claude/**/*.md'
-      - '!CLAUDE.md'
-      - '!GEMENI.md'
-      - '!.cursor/**'
-      - '!.cline/**' 
+  paths:
+    # Ignore entire .claude/ directory
+    - '!.claude/**'
+    
+    # Ignore other helper directories
+    - '!.cursor/**'
+    - '!.cline/**'
+  
+    # Include markdown files everywhere else
+    - '**/*.md'
+    - '**/*.en.md'
+    - '**/*.ja.md'
+  
+    # Explicit file ignores
+    - '!CLAUDE.md'
+    - '!GEMENI.md'
+
  
   push:
     branches:
       - main
       - master  
-    paths:
-      - '**.md'
-      - '**.en.md'
-      - '**.ja.md'
-      - '!.claude/**/*.md'
-      - '!CLAUDE.md'
-      - '!GEMENI.md'
-      - '!.cursor/**'
-      - '!.cline/**'    
+  paths:
+    # Ignore entire .claude/ directory
+    - '!.claude/**'
+    
+    # Ignore other helper directories
+    - '!.cursor/**'
+    - '!.cline/**'
+  
+    # Include markdown files everywhere else
+    - '**/*.md'
+    - '**/*.en.md'
+    - '**/*.ja.md'
+  
+    # Explicit file ignores
+    - '!CLAUDE.md'
+    - '!GEMENI.md'   
 
 permissions:
   contents: write
