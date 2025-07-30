@@ -20,5 +20,16 @@
     "hash": "218367bd6f3af0a870f09ca6d94878b1",
     "commit": "75a6ad45515f8d235a44841f566226a1923a4ff7",
     "timestamp": "2025-07-30T19:42:25.796256"
+  },
+  "Test4/newTest.ja.md": {
+    "hash": "5fd16b6c0fb5d7219b8f02d3d8f5583e",
+    "commit": "db42610f4931664c266e4127f9bd012f6c1c3b76",
+    "timestamp": "2025-07-30T19:52:52.768423",
+    "source_file": "Test4/newTest.en.md"
+  },
+  "Test4/newTest.en.md": {
+    "hash": "ec25bab2881b448ef296f9a59317f11d",
+    "commit": "db42610f4931664c266e4127f9bd012f6c1c3b76",
+    "timestamp": "2025-07-30T19:52:52.768432"
   }
 }
