@@ -77,15 +77,15 @@
     "timestamp": "2025-07-27T19:58:10.063776"
   },
   "Test2/Test2.ja.md": {
-    "hash": "38da56e849c3a634d9f5040ec8644375",
-    "commit": "b4c56c2bff4b22c3588daecff30856ef13033c86",
-    "timestamp": "2025-07-27T19:58:11.731989",
+    "hash": "782cd440b311b3f0ef5bbb73492f4c26",
+    "commit": "496cd2c3999f4419112d42b17385ca8a2e571111",
+    "timestamp": "2025-07-30T19:25:11.645556",
     "source_file": "Test2/Test2.md"
   },
   "Test2/Test2.md": {
-    "hash": "b2a2729163ce422bdac5ca984e6a95ae",
-    "commit": "b4c56c2bff4b22c3588daecff30856ef13033c86",
-    "timestamp": "2025-07-27T19:58:11.731998"
+    "hash": "be140f9e27f7360183e126d23fa46e8d",
+    "commit": "496cd2c3999f4419112d42b17385ca8a2e571111",
+    "timestamp": "2025-07-30T19:25:11.645562"
   },
   "Test1.en.md": {
     "hash": "69d0d33814be72544b5ae6d2f4592b77",
@@ -146,5 +146,16 @@
     "hash": "a9d330bfd4ef8cf37a18c2cc21788cee",
     "commit": "bbe551704c9cbb398bbd1c27a02ddcfb183b58bc",
     "timestamp": "2025-07-28T20:28:25.521899"
+  },
+  ".claude/test1.ja.md": {
+    "hash": "185fb0867244e17e42512f811a0d50f6",
+    "commit": "496cd2c3999f4419112d42b17385ca8a2e571111",
+    "timestamp": "2025-07-30T19:25:10.096333",
+    "source_file": ".claude/test1.md"
+  },
+  ".claude/test1.md": {
+    "hash": "0b26e313ed4a7ca6904b0e9369e5b957",
+    "commit": "496cd2c3999f4419112d42b17385ca8a2e571111",
+    "timestamp": "2025-07-30T19:25:10.096345"
   }
 }
