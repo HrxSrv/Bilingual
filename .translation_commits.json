@@ -45,13 +45,13 @@
   },
   ".claude/commands/test1.ja.md": {
     "hash": "185fb0867244e17e42512f811a0d50f6",
-    "commit": "314a90601c8e1e2e08878ba79d9597f7e894dc64",
-    "timestamp": "2025-07-30T20:52:10.035513",
+    "commit": "09704d71ac7a408bf9cb1d46b10760422fffd60e",
+    "timestamp": "2025-07-30T20:55:58.645672",
     "source_file": ".claude/commands/test1.en.md"
   },
   ".claude/commands/test1.en.md": {
     "hash": "0b26e313ed4a7ca6904b0e9369e5b957",
-    "commit": "314a90601c8e1e2e08878ba79d9597f7e894dc64",
-    "timestamp": "2025-07-30T20:52:10.035526"
+    "commit": "09704d71ac7a408bf9cb1d46b10760422fffd60e",
+    "timestamp": "2025-07-30T20:55:58.645685"
   }
 }
