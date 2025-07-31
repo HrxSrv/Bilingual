@@ -1,152 +1,244 @@
 {
-  "Readme.ja.md": {
-    "hash": "d7a4dacaf4c3374e7dcb2da4eb0182cf",
-    "commit": "0b0d394209031dcd33ef4f9080c61410190ae069",
-    "timestamp": "2025-07-28T20:14:31.321791",
-    "source_file": "Readme.en.md"
+  "Tasks.ja.md": {
+    "hash": "ff1ea8c0f502bdf13732ffc333a9d795",
+    "commit": "75a6ad45515f8d235a44841f566226a1923a4ff7",
+    "timestamp": "2025-07-30T19:42:25.195583",
+    "source_file": "Tasks.en.md"
   },
-  "Readme.md": {
-    "hash": "2c6cd910b2cbd025e821671f76dc899d",
-    "commit": "0b0d394209031dcd33ef4f9080c61410190ae069",
-    "timestamp": "2025-07-28T20:14:33.010240"
+  "Tasks.en.md": {
+    "hash": "218367bd6f3af0a870f09ca6d94878b1",
+    "commit": "75a6ad45515f8d235a44841f566226a1923a4ff7",
+    "timestamp": "2025-07-30T19:42:25.195594"
   },
-  "docs/test.ja.md": {
-    "hash": "d58fb0c4757db4784441e334f1da20fe",
-    "commit": "96c2294cbe0273bd3f0c5479366274cfbfb09743",
-    "timestamp": "2025-07-26T13:12:24.102482",
-    "source_file": "docs/test.md"
+  "Test4/Tasks.ja.md": {
+    "hash": "1d3e6e2e640049ba8972ff683b3e6345",
+    "commit": "75a6ad45515f8d235a44841f566226a1923a4ff7",
+    "timestamp": "2025-07-30T19:42:25.796246",
+    "source_file": "Test4/Tasks.en.md"
   },
-  "docs/test.md": {
-    "hash": "5ec5da1d582835794e3883bac14dbb59",
-    "commit": "96c2294cbe0273bd3f0c5479366274cfbfb09743",
-    "timestamp": "2025-07-26T13:12:24.102490"
+  "Test4/Tasks.en.md": {
+    "hash": "218367bd6f3af0a870f09ca6d94878b1",
+    "commit": "75a6ad45515f8d235a44841f566226a1923a4ff7",
+    "timestamp": "2025-07-30T19:42:25.796256"
   },
-  "Test1/test1.ja.md": {
-    "hash": "2a4fae4135c0e1dc016ead6ecebfc8f3",
-    "commit": "7efd4abc886645ccf9d5c94081304ce4423e19ea",
-    "timestamp": "2025-07-26T13:37:57.758176",
-    "source_file": "Test1/test1.md"
+  "Test4/newTest.ja.md": {
+    "hash": "5fd16b6c0fb5d7219b8f02d3d8f5583e",
+    "commit": "db42610f4931664c266e4127f9bd012f6c1c3b76",
+    "timestamp": "2025-07-30T19:52:52.768423",
+    "source_file": "Test4/newTest.en.md"
   },
-  "Test1/test1.md": {
-    "hash": "6de52bf3c87ca7d31c0022431610d72d",
-    "commit": "7efd4abc886645ccf9d5c94081304ce4423e19ea",
-    "timestamp": "2025-07-26T13:37:57.758185"
+  "Test4/newTest.en.md": {
+    "hash": "ec25bab2881b448ef296f9a59317f11d",
+    "commit": "db42610f4931664c266e4127f9bd012f6c1c3b76",
+    "timestamp": "2025-07-30T19:52:52.768432"
   },
-  "Test.md": {
-    "hash": "98a1ef1372d167743014a29074141ff9",
-    "commit": "25c2322108c34fc7f24b4f86cb1b85eabdabaa3d",
-    "timestamp": "2025-07-26T19:02:46.204703",
-    "source_file": "Test.ja.md"
+  "Test4/test1.ja.md": {
+    "hash": "b9ce9c03b04988c27753c333366f09e5",
+    "commit": "8b79e62fdafc1fd7c5cc434bfe824c37b76d4332",
+    "timestamp": "2025-07-30T20:07:30.886696",
+    "source_file": "Test4/test1.en.md"
   },
-  "Test.ja.md": {
-    "hash": "a9d330bfd4ef8cf37a18c2cc21788cee",
-    "commit": "3733c4df35f83e9a3ff2055359dceb1c85ad3a95",
-    "timestamp": "2025-07-28T19:03:16.106391",
-    "source_file": "Test.en.md"
+  "Test4/test1.en.md": {
+    "hash": "4c53da101f35e9400fdef204ac5dc260",
+    "commit": "8b79e62fdafc1fd7c5cc434bfe824c37b76d4332",
+    "timestamp": "2025-07-30T20:07:30.886705"
+  },
+  ".claude/commands/test1.ja.md": {
+    "hash": "185fb0867244e17e42512f811a0d50f6",
+    "commit": "7e5f32d6458c378133dda960874a990d6bd61df8",
+    "timestamp": "2025-07-30T21:26:58.665803",
+    "source_file": ".claude/commands/test1.en.md"
+  },
+  ".claude/commands/test1.en.md": {
+    "hash": "0b26e313ed4a7ca6904b0e9369e5b957",
+    "commit": "7e5f32d6458c378133dda960874a990d6bd61df8",
+    "timestamp": "2025-07-30T21:26:58.665815"
+  },
+  "Test/Testx.ja.md": {
+    "hash": "084480d51472c52c472aeaf77d7f11bb",
+    "commit": "d3296f66160bc141dafd405331fcf2ff1f24b1cb",
+    "timestamp": "2025-07-30T21:06:40.828350",
+    "source_file": "Test/Testx.en.md"
+  },
+  "Test/Testx.en.md": {
+    "hash": "4278aa099e84a79f9deb08d5cfd1d7b0",
+    "commit": "d3296f66160bc141dafd405331fcf2ff1f24b1cb",
+    "timestamp": "2025-07-30T21:06:40.828359"
+  },
+  "Test2/Test33.ja.md": {
+    "hash": "543051f58eec7594c47c98d036c4240e",
+    "commit": "fe5a82292dd06c75b3974a89790bd192a18977e8",
+    "timestamp": "2025-07-30T21:12:30.835273",
+    "source_file": "Test2/Test33.en.md"
+  },
+  "Test2/Test33.en.md": {
+    "hash": "15b1388bbe8ae6a57d878ec12c3ca7d0",
+    "commit": "fe5a82292dd06c75b3974a89790bd192a18977e8",
+    "timestamp": "2025-07-30T21:12:30.835282"
+  },
+  "Test2/TestFInalPlease.ja.md": {
+    "hash": "539e33efa95fe4b7eec2f8296b45fea1",
+    "commit": "c689d63d07ec6641a090d4c565e3da2ed7f60d34",
+    "timestamp": "2025-07-30T21:28:53.739282",
+    "source_file": "Test2/TestFInalPlease.en.md"
+  },
+  "Test2/TestFInalPlease.en.md": {
+    "hash": "26f7a54bc2f70ed784688fcae6cd507d",
+    "commit": "c689d63d07ec6641a090d4c565e3da2ed7f60d34",
+    "timestamp": "2025-07-30T21:28:53.739292"
+  },
+  ".claude/Test2.ja.md": {
+    "hash": "966bf1da0d67f89b3073f6c569b50296",
+    "commit": "c4563418ab93ec7b40d7a5878bc264177d7741b7",
+    "timestamp": "2025-07-31T06:30:51.286483",
+    "source_file": ".claude/Test2.en.md"
+  },
+  ".claude/Test2.en.md": {
+    "hash": "2e2b06ac1e439469de65c601622b38af",
+    "commit": "c4563418ab93ec7b40d7a5878bc264177d7741b7",
+    "timestamp": "2025-07-31T06:30:51.286495"
+  },
+  ".claude/Test1.ja.md": {
+    "hash": "97f7896189c87646358492753bbeb50e",
+    "commit": "bee2c83427b3114004eb9c1fc6d33bdd4a4c3861",
+    "timestamp": "2025-07-30T21:32:40.066358",
+    "source_file": ".claude/Test1.en.md"
+  },
+  ".claude/Test1.en.md": {
+    "hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "commit": "bee2c83427b3114004eb9c1fc6d33bdd4a4c3861",
+    "timestamp": "2025-07-30T21:32:40.066368"
+  },
+  ".cline/Test1.ja.md": {
+    "hash": "185fb0867244e17e42512f811a0d50f6",
+    "commit": "e64743027a1f65e644a5ae146dc2d3b2b59aaef5",
+    "timestamp": "2025-07-31T06:28:14.604670",
+    "source_file": ".cline/Test1.en.md"
+  },
+  ".cline/Test1.en.md": {
+    "hash": "bc9ad6875bc7d9c020d3f3023c9b42de",
+    "commit": "e64743027a1f65e644a5ae146dc2d3b2b59aaef5",
+    "timestamp": "2025-07-31T06:28:14.604681"
+  },
+  ".claude/Test.ja.md": {
+    "hash": "9d13298e86e460a74566b89dc4c9f8bb",
+    "commit": "23fd09ef2e77e303fad9537e02dec9ee3277a106",
+    "timestamp": "2025-07-31T07:09:52.757894",
+    "source_file": ".claude/Test.en.md"
+  },
+  ".claude/Test.en.md": {
+    "hash": "67a84c5f6b7ae7dc70e5fae4ca09096b",
+    "commit": "23fd09ef2e77e303fad9537e02dec9ee3277a106",
+    "timestamp": "2025-07-31T07:09:52.757905"
+  },
+  "CLAUDE.ja.md": {
+    "hash": "a38f39a3ed920b87f8c463f1211464c8",
+    "commit": "a9f041de05b1d7fb6af18c78e02ff25963a49aae",
+    "timestamp": "2025-07-31T06:56:47.650974",
+    "source_file": "CLAUDE.en.md"
+  },
+  "CLAUDE.en.md": {
+    "hash": "d357851fba33a1dc407e489353a3056a",
+    "commit": "a9f041de05b1d7fb6af18c78e02ff25963a49aae",
+    "timestamp": "2025-07-31T06:56:47.650982"
+  },
+  ".claude/Text.ja.md": {
+    "hash": "966bf1da0d67f89b3073f6c569b50296",
+    "commit": "6e52d5c74bbc6dd97a06341cb7563920390430a5",
+    "timestamp": "2025-07-31T07:04:40.030547",
+    "source_file": ".claude/Text.en.md"
+  },
+  ".claude/Text.en.md": {
+    "hash": "2e2b06ac1e439469de65c601622b38af",
+    "commit": "6e52d5c74bbc6dd97a06341cb7563920390430a5",
+    "timestamp": "2025-07-31T07:04:40.030562"
+  },
+  "test1.ja.md": {
+    "hash": "bd13ddbcbaafd5a3aa660371829a7eae",
+    "commit": "2adfed5992e39c62a7d10099e266afd1e384d824",
+    "timestamp": "2025-07-31T07:28:04.180969",
+    "source_file": "test1.en.md"
+  },
+  "test1.en.md": {
+    "hash": "4e0b50185c775763521d03f1e4e60162",
+    "commit": "2adfed5992e39c62a7d10099e266afd1e384d824",
+    "timestamp": "2025-07-31T07:28:04.180981"
   },
   "Test2.ja.md": {
-    "hash": "e4d70dc630c9f273fec17242b110ee2f",
-    "commit": "6ec1203129129e4f8da8c6506c2b5239c25f50a1",
-    "timestamp": "2025-07-27T19:23:04.269751",
-    "source_file": "Test2.md"
+    "hash": "3e69fd7142136f07f94f1937e25d10ca",
+    "commit": "5b6ba922d26b2ac605b5937a1966bdd386280f2b",
+    "timestamp": "2025-07-31T07:55:20.339712",
+    "source_file": "Test2.en.md"
   },
-  "Test2.md": {
-    "hash": "a3c4e4e93f43435c6090310e83b24b71",
-    "commit": "6ec1203129129e4f8da8c6506c2b5239c25f50a1",
-    "timestamp": "2025-07-27T19:23:04.269766"
-  },
-  "Test3.md": {
-    "hash": "b67fcd9dcc3a63ed187fee4976fa7282",
-    "commit": "ce1ed264185cde03dc52d52ee5b7315fc5f949c2",
-    "timestamp": "2025-07-27T19:20:56.719537",
-    "source_file": "Test3.ja.md"
+  "Test2.en.md": {
+    "hash": "4e0b50185c775763521d03f1e4e60162",
+    "commit": "5b6ba922d26b2ac605b5937a1966bdd386280f2b",
+    "timestamp": "2025-07-31T07:55:20.339745"
   },
   "Test3.ja.md": {
-    "hash": "5656dd582fe7e139220c1de16a2ec59e",
-    "commit": "ce1ed264185cde03dc52d52ee5b7315fc5f949c2",
-    "timestamp": "2025-07-27T19:20:56.719547"
+    "hash": "3e69fd7142136f07f94f1937e25d10ca",
+    "commit": "5b6ba922d26b2ac605b5937a1966bdd386280f2b",
+    "timestamp": "2025-07-31T07:55:21.460364",
+    "source_file": "Test3.en.md"
   },
-  "Test1.ja.md": {
-    "hash": "5b8873418a3a4e78ccd1cc93c667f878",
-    "commit": "fa163c26af1c9071ceb95fd5ec57332efca203fb",
-    "timestamp": "2025-07-28T18:51:42.548301",
-    "source_file": "Test1.en.md"
+  "Test3.en.md": {
+    "hash": "4e0b50185c775763521d03f1e4e60162",
+    "commit": "5b6ba922d26b2ac605b5937a1966bdd386280f2b",
+    "timestamp": "2025-07-31T07:55:21.460372"
   },
-  "Test1.md": {
-    "hash": "957f1b9492eb644f8b5018f0f5de583f",
-    "commit": "b4c56c2bff4b22c3588daecff30856ef13033c86",
-    "timestamp": "2025-07-27T19:58:10.063776"
-  },
-  "Test2/Test2.ja.md": {
-    "hash": "782cd440b311b3f0ef5bbb73492f4c26",
-    "commit": "496cd2c3999f4419112d42b17385ca8a2e571111",
-    "timestamp": "2025-07-30T19:25:11.645556",
-    "source_file": "Test2/Test2.md"
-  },
-  "Test2/Test2.md": {
-    "hash": "be140f9e27f7360183e126d23fa46e8d",
-    "commit": "496cd2c3999f4419112d42b17385ca8a2e571111",
-    "timestamp": "2025-07-30T19:25:11.645562"
-  },
-  "Test1.en.md": {
-    "hash": "69d0d33814be72544b5ae6d2f4592b77",
-    "commit": "fa163c26af1c9071ceb95fd5ec57332efca203fb",
-    "timestamp": "2025-07-28T18:51:42.548312"
-  },
-  "Test.en.md": {
-    "hash": "c6ead6b1418aa4044f631f13890d8663",
-    "commit": "3733c4df35f83e9a3ff2055359dceb1c85ad3a95",
-    "timestamp": "2025-07-28T19:03:16.106401"
-  },
-  "Readme.en.md": {
-    "hash": "ab9834703420507a02e9303c9fc11786",
-    "commit": "0b0d394209031dcd33ef4f9080c61410190ae069",
-    "timestamp": "2025-07-28T20:14:33.010231",
-    "source_file": "Readme.md"
-  },
-  "Test/Test2.ja.md": {
-    "hash": "583666403d5b1b85391a09dc6cc0aad0",
-    "commit": "b732665b3d97229bc286d4c6e10a5f700ef674a1",
-    "timestamp": "2025-07-28T19:36:30.991983",
-    "source_file": "Test/Test2.en.md"
-  },
-  "Test/Test2.en.md": {
-    "hash": "d1f2eac9cf38242d99287e25c3c759b4",
-    "commit": "b732665b3d97229bc286d4c6e10a5f700ef674a1",
-    "timestamp": "2025-07-28T19:36:30.991992"
-  },
-  "Readme..en.md": {
-    "hash": "ab9834703420507a02e9303c9fc11786",
-    "commit": "d511499d4415935aeddd36b361936ff8678773e2",
-    "timestamp": "2025-07-28T20:06:16.987152",
-    "source_file": "Readme..ja.md"
-  },
-  "Readme..ja.md": {
-    "hash": "2c6cd910b2cbd025e821671f76dc899d",
-    "commit": "d511499d4415935aeddd36b361936ff8678773e2",
-    "timestamp": "2025-07-28T20:06:16.987161"
-  },
-  "Test/Test3.en.md": {
-    "hash": "7c75df1c474b5d768d8213a3ad2d13aa",
-    "commit": "1fd9b362cc82287a67c62414fddba5393ad18d83",
-    "timestamp": "2025-07-28T20:42:42.467498"
-  },
-  "Test/Test3.ja.md": {
-    "hash": "4c5903e620e2dde4c50737279c912913",
-    "commit": "1fd9b362cc82287a67c62414fddba5393ad18d83",
-    "timestamp": "2025-07-28T20:42:42.467486",
-    "source_file": "Test/Test3.en.md"
-  },
-  "Test/TestSub/Test4.en.md": {
+  "Test4.en.md": {
     "hash": "2c2cfa9f7bdeeab53df3a5c6c36edd20",
-    "commit": "bbe551704c9cbb398bbd1c27a02ddcfb183b58bc",
-    "timestamp": "2025-07-28T20:28:25.521887",
-    "source_file": "Test/TestSub/Test4.ja.md"
+    "commit": "5b6ba922d26b2ac605b5937a1966bdd386280f2b",
+    "timestamp": "2025-07-31T07:55:21.845472",
+    "source_file": "Test4.ja.md"
   },
-  "Test/TestSub/Test4.ja.md": {
+  "Test4.ja.md": {
     "hash": "a9d330bfd4ef8cf37a18c2cc21788cee",
-    "commit": "bbe551704c9cbb398bbd1c27a02ddcfb183b58bc",
-    "timestamp": "2025-07-28T20:28:25.521899"
+    "commit": "5b6ba922d26b2ac605b5937a1966bdd386280f2b",
+    "timestamp": "2025-07-31T07:55:21.845479"
   },
+  "Textx/Test2.ja.md": {
+    "hash": "3e69fd7142136f07f94f1937e25d10ca",
+    "commit": "8717c8cd6587640a06d51151f2e06a86b4be5d60",
+    "timestamp": "2025-07-31T07:58:03.785324",
+    "source_file": "Textx/Test2.en.md"
+  },
+  "Textx/Test2.en.md": {
+    "hash": "4e0b50185c775763521d03f1e4e60162",
+    "commit": "8717c8cd6587640a06d51151f2e06a86b4be5d60",
+    "timestamp": "2025-07-31T07:58:03.785334"
+  },
+  "Textx/Test3.en.md": {
+    "hash": "0a94e65c4768363d82179ea5e2658bf9",
+    "commit": "8717c8cd6587640a06d51151f2e06a86b4be5d60",
+    "timestamp": "2025-07-31T07:58:04.357827",
+    "source_file": "Textx/Test3.ja.md"
+  },
+  "Textx/Test3.ja.md": {
+    "hash": "3e69fd7142136f07f94f1937e25d10ca",
+    "commit": "8717c8cd6587640a06d51151f2e06a86b4be5d60",
+    "timestamp": "2025-07-31T07:58:04.357832"
+  },
+  "Textx/Test4.ja.md": {
+    "hash": "a9d330bfd4ef8cf37a18c2cc21788cee",
+    "commit": "8717c8cd6587640a06d51151f2e06a86b4be5d60",
+    "timestamp": "2025-07-31T07:58:05.144969",
+    "source_file": "Textx/Test4.en.md"
+  },
+  "Textx/Test4.en.md": {
+    "hash": "2c2cfa9f7bdeeab53df3a5c6c36edd20",
+    "commit": "8717c8cd6587640a06d51151f2e06a86b4be5d60",
+    "timestamp": "2025-07-31T07:58:05.144974"
+  },
+  "Claudeff.ja.md": {
+    "hash": "6b0a0084b22e4c0839192f0a10e010ee",
+    "commit": "673814347c7820ca8f512802cf6135b7770350bc",
+    "timestamp": "2025-07-31T08:18:59.147221",
+    "source_file": "Claudeff.en.md"
+  },
+  "Claudeff.en.md": {
+    "hash": "ba95765335bb08d9cac03ded805f58de",
+    "commit": "673814347c7820ca8f512802cf6135b7770350bc",
+    "timestamp": "2025-07-31T08:18:59.147233"
   }
 }
