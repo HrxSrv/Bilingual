@@ -121,15 +121,15 @@
     "timestamp": "2025-07-31T06:28:14.604681"
   },
   ".claude/Test.ja.md": {
-    "hash": "966bf1da0d67f89b3073f6c569b50296",
-    "commit": "a9f041de05b1d7fb6af18c78e02ff25963a49aae",
-    "timestamp": "2025-07-31T06:56:44.257407",
+    "hash": "9d13298e86e460a74566b89dc4c9f8bb",
+    "commit": "23fd09ef2e77e303fad9537e02dec9ee3277a106",
+    "timestamp": "2025-07-31T07:09:52.757894",
     "source_file": ".claude/Test.en.md"
   },
   ".claude/Test.en.md": {
-    "hash": "2e2b06ac1e439469de65c601622b38af",
-    "commit": "a9f041de05b1d7fb6af18c78e02ff25963a49aae",
-    "timestamp": "2025-07-31T06:56:44.257418"
+    "hash": "67a84c5f6b7ae7dc70e5fae4ca09096b",
+    "commit": "23fd09ef2e77e303fad9537e02dec9ee3277a106",
+    "timestamp": "2025-07-31T07:09:52.757905"
   },
   "CLAUDE.ja.md": {
     "hash": "a38f39a3ed920b87f8c463f1211464c8",
