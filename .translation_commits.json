@@ -119,5 +119,16 @@
     "hash": "bc9ad6875bc7d9c020d3f3023c9b42de",
     "commit": "9502006a6ebbe246dc8c6cfcd523c5a0a657cee7",
     "timestamp": "2025-07-31T06:10:27.462141"
+  },
+  ".claude/Test.ja.md": {
+    "hash": "185fb0867244e17e42512f811a0d50f6",
+    "commit": "22e6ea726602e802bf2e45988b094681d58a09bd",
+    "timestamp": "2025-07-31T06:25:12.151787",
+    "source_file": ".claude/Test.en.md"
+  },
+  ".claude/Test.en.md": {
+    "hash": "df1c6a4943c319f6281d78e31525ae66",
+    "commit": "22e6ea726602e802bf2e45988b094681d58a09bd",
+    "timestamp": "2025-07-31T06:25:12.151798"
   }
 }
