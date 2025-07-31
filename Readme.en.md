@@ -2,9 +2,9 @@
 
 This project is a sample Japanese README file.
 
-## 📦 Installation Instructions
+## 📦 Installation Method
 
-Please use the following commands to install.
+Please use the following command to install.
 
 ```bash
 git clone https://github.com/your-username/your-project.git
