@@ -196,5 +196,38 @@
     "hash": "a9d330bfd4ef8cf37a18c2cc21788cee",
     "commit": "5b6ba922d26b2ac605b5937a1966bdd386280f2b",
     "timestamp": "2025-07-31T07:55:21.845479"
+  },
+  "Textx/Test2.ja.md": {
+    "hash": "3e69fd7142136f07f94f1937e25d10ca",
+    "commit": "8717c8cd6587640a06d51151f2e06a86b4be5d60",
+    "timestamp": "2025-07-31T07:58:03.785324",
+    "source_file": "Textx/Test2.en.md"
+  },
+  "Textx/Test2.en.md": {
+    "hash": "4e0b50185c775763521d03f1e4e60162",
+    "commit": "8717c8cd6587640a06d51151f2e06a86b4be5d60",
+    "timestamp": "2025-07-31T07:58:03.785334"
+  },
+  "Textx/Test3.en.md": {
+    "hash": "0a94e65c4768363d82179ea5e2658bf9",
+    "commit": "8717c8cd6587640a06d51151f2e06a86b4be5d60",
+    "timestamp": "2025-07-31T07:58:04.357827",
+    "source_file": "Textx/Test3.ja.md"
+  },
+  "Textx/Test3.ja.md": {
+    "hash": "3e69fd7142136f07f94f1937e25d10ca",
+    "commit": "8717c8cd6587640a06d51151f2e06a86b4be5d60",
+    "timestamp": "2025-07-31T07:58:04.357832"
+  },
+  "Textx/Test4.ja.md": {
+    "hash": "a9d330bfd4ef8cf37a18c2cc21788cee",
+    "commit": "8717c8cd6587640a06d51151f2e06a86b4be5d60",
+    "timestamp": "2025-07-31T07:58:05.144969",
+    "source_file": "Textx/Test4.en.md"
+  },
+  "Textx/Test4.en.md": {
+    "hash": "2c2cfa9f7bdeeab53df3a5c6c36edd20",
+    "commit": "8717c8cd6587640a06d51151f2e06a86b4be5d60",
+    "timestamp": "2025-07-31T07:58:05.144974"
   }
 }
