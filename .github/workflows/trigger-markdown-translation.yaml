@@ -6,14 +6,17 @@ on:
     paths:
       - '**.md'
       - '!.claude/**'
- 
+      - '!CLAUDE.md'
+      - '!GEMINI.md'
   push:
     branches:
       - main
       - master  
     paths:
       - '**.md'
-      - '!.claude/**'   
+      - '!.claude/**'
+      - '!CLAUDE.md'
+      - '!GEMINI.md' 
 
 permissions:
   contents: write
