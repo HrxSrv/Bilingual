@@ -6,6 +6,7 @@ on:
     paths:
       - '**.md'
       - '!.claude/**'
+      - '!.cline/**'
       - '!CLAUDE.md'
       - '!GEMINI.md'
   push:
@@ -15,6 +16,7 @@ on:
     paths:
       - '**.md'
       - '!.claude/**'
+      - '!.cline/**'
       - '!CLAUDE.md'
       - '!GEMINI.md' 
 
@@ -86,15 +88,25 @@ jobs:
             echo "changed_files=" >> $GITHUB_OUTPUT
             exit 0
           else
-            # Get changed files from commits
+            # Get changed files from commits with filtering
             if [[ "${{ github.event_name }}" == "pull_request" ]]; then
-              # For PR, get files changed in the PR
-              CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | grep -E '\.md$|\.en\.md$|\.ja\.md$' || true)
+              # For PR, get files changed in the PR and filter out excluded paths
+              CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | \
+                grep -E '\.md$|\.en\.md$|\.ja\.md$' | \
+                grep -v '^\.claude/' | \
+                grep -v '^\.cline/' | \
+                grep -v '^CLAUDE\.md$' | \
+                grep -v '^GEMINI\.md$' || true)
             else
-              # For push, get files changed in the push
+              # For push, get files changed in the push with filtering
               CHANGED_FILES=""
               for commit in $(git rev-list ${{ github.event.before }}..${{ github.event.after }}); do
-                FILES=$(git diff-tree --no-commit-id --name-only -r $commit | grep -E '\.md$|\.en\.md$|\.ja\.md$' || true)
+                FILES=$(git diff-tree --no-commit-id --name-only -r $commit | \
+                  grep -E '\.md$|\.en\.md$|\.ja\.md$' | \
+                  grep -v '^\.claude/' | \
+                  grep -v '^\.cline/' | \
+                  grep -v '^CLAUDE\.md$' | \
+                  grep -v '^GEMINI\.md$' || true)
                 if [[ -n "$FILES" ]]; then
                   if [[ -n "$CHANGED_FILES" ]]; then
                     CHANGED_FILES="$CHANGED_FILES,$FILES"
@@ -108,17 +120,27 @@ jobs:
             # Remove duplicates and format
             CHANGED_FILES=$(echo "$CHANGED_FILES" | tr ',' '\n' | sort -u | tr '\n' ',' | sed 's/,$//')
             
-            echo "Changed markdown files: $CHANGED_FILES"
+            echo "Changed markdown files (after filtering): $CHANGED_FILES"
             
-            # Check for deleted markdown files
+            # Check for deleted markdown files with filtering
             if [[ "${{ github.event_name }}" == "pull_request" ]]; then
-              DELETED_FILES=$(git diff --name-only --diff-filter=D origin/${{ github.base_ref }}...HEAD | grep -E '\.md$|\.en\.md$|\.ja\.md$' || true)
+              DELETED_FILES=$(git diff --name-only --diff-filter=D origin/${{ github.base_ref }}...HEAD | \
+                grep -E '\.md$|\.en\.md$|\.ja\.md$' | \
+                grep -v '^\.claude/' | \
+                grep -v '^\.cline/' | \
+                grep -v '^CLAUDE\.md$' | \
+                grep -v '^GEMINI\.md$' || true)
             else
-              DELETED_FILES=$(git diff --name-only --diff-filter=D ${{ github.event.before }} ${{ github.event.after }} | grep -E '\.md$|\.en\.md$|\.ja\.md$' || true)
+              DELETED_FILES=$(git diff --name-only --diff-filter=D ${{ github.event.before }} ${{ github.event.after }} | \
+                grep -E '\.md$|\.en\.md$|\.ja\.md$' | \
+                grep -v '^\.claude/' | \
+                grep -v '^\.cline/' | \
+                grep -v '^CLAUDE\.md$' | \
+                grep -v '^GEMINI\.md$' || true)
             fi
             DELETED_FILES=$(echo "$DELETED_FILES" | tr '\n' ',' | sed 's/,$//')
             
-            echo "Deleted files: $DELETED_FILES"
+            echo "Deleted files (after filtering): $DELETED_FILES"
             
             if [[ -n "$CHANGED_FILES" ]] || [[ -n "$DELETED_FILES" ]]; then
               echo "has_changes=true" >> $GITHUB_OUTPUT
@@ -144,4 +166,4 @@ jobs:
       commit_hash: ${{ github.sha }}
       is_pr: ${{ needs.check-markdown-changes.outputs.is_pr == 'true' }}
       pr_number: ${{ needs.check-markdown-changes.outputs.pr_number }}
-      target_branch: ${{ needs.check-markdown-changes.outputs.target_branch }} 
+      target_branch: ${{ needs.check-markdown-changes.outputs.target_branch }}
