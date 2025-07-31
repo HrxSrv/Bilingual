@@ -5,13 +5,7 @@ on:
     types: [opened, synchronize, reopened]
     paths:
       - '**.md'
-      - '**.en.md'
-      - '**.ja.md'
       - '!.claude/**'
-      - '!CLAUDE.md'
-      - '!GEMENI.md'
-      - '!.cursor/**'
-      - '!.cline/**' 
  
   push:
     branches:
@@ -19,13 +13,7 @@ on:
       - master  
     paths:
       - '**.md'
-      - '**.en.md'
-      - '**.ja.md'
-      - '!.claude/**'
-      - '!CLAUDE.md'
-      - '!GEMENI.md'
-      - '!.cursor/**'
-      - '!.cline/**'    
+      - '!.claude/**'   
 
 permissions:
   contents: write
