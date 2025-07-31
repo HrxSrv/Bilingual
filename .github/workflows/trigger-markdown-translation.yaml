@@ -6,6 +6,7 @@ on:
     paths:
       - '**.md'
       - '!.claude/**'
+      - '!.cursor/**'
       - '!.cline/**'
       - '!CLAUDE.md'
       - '!GEMINI.md'
@@ -16,6 +17,7 @@ on:
     paths:
       - '**.md'
       - '!.claude/**'
+      - '!.cursor/**'
       - '!.cline/**'
       - '!CLAUDE.md'
       - '!GEMINI.md' 
@@ -94,6 +96,7 @@ jobs:
               CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | \
                 grep -E '\.md$|\.en\.md$|\.ja\.md$' | \
                 grep -v '^\.claude/' | \
+                grep -v '^\.cursor/' | \
                 grep -v '^\.cline/' | \
                 grep -v '^CLAUDE\.md$' | \
                 grep -v '^GEMINI\.md$' || true)
@@ -104,6 +107,7 @@ jobs:
                 FILES=$(git diff-tree --no-commit-id --name-only -r $commit | \
                   grep -E '\.md$|\.en\.md$|\.ja\.md$' | \
                   grep -v '^\.claude/' | \
+                  grep -v '^\.cursor/' | \
                   grep -v '^\.cline/' | \
                   grep -v '^CLAUDE\.md$' | \
                   grep -v '^GEMINI\.md$' || true)
@@ -127,6 +131,7 @@ jobs:
               DELETED_FILES=$(git diff --name-only --diff-filter=D origin/${{ github.base_ref }}...HEAD | \
                 grep -E '\.md$|\.en\.md$|\.ja\.md$' | \
                 grep -v '^\.claude/' | \
+                grep -v '^\.cursor/' | \
                 grep -v '^\.cline/' | \
                 grep -v '^CLAUDE\.md$' | \
                 grep -v '^GEMINI\.md$' || true)
@@ -134,6 +139,7 @@ jobs:
               DELETED_FILES=$(git diff --name-only --diff-filter=D ${{ github.event.before }} ${{ github.event.after }} | \
                 grep -E '\.md$|\.en\.md$|\.ja\.md$' | \
                 grep -v '^\.claude/' | \
+                grep -v '^\.cursor/' | \
                 grep -v '^\.cline/' | \
                 grep -v '^CLAUDE\.md$' | \
                 grep -v '^GEMINI\.md$' || true)
