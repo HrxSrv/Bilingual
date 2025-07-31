@@ -121,14 +121,25 @@
     "timestamp": "2025-07-31T06:28:14.604681"
   },
   ".claude/Test.ja.md": {
-    "hash": "185fb0867244e17e42512f811a0d50f6",
-    "commit": "22e6ea726602e802bf2e45988b094681d58a09bd",
-    "timestamp": "2025-07-31T06:25:12.151787",
+    "hash": "966bf1da0d67f89b3073f6c569b50296",
+    "commit": "a9f041de05b1d7fb6af18c78e02ff25963a49aae",
+    "timestamp": "2025-07-31T06:56:44.257407",
     "source_file": ".claude/Test.en.md"
   },
   ".claude/Test.en.md": {
-    "hash": "df1c6a4943c319f6281d78e31525ae66",
-    "commit": "22e6ea726602e802bf2e45988b094681d58a09bd",
-    "timestamp": "2025-07-31T06:25:12.151798"
+    "hash": "2e2b06ac1e439469de65c601622b38af",
+    "commit": "a9f041de05b1d7fb6af18c78e02ff25963a49aae",
+    "timestamp": "2025-07-31T06:56:44.257418"
+  },
+  "CLAUDE.ja.md": {
+    "hash": "a38f39a3ed920b87f8c463f1211464c8",
+    "commit": "a9f041de05b1d7fb6af18c78e02ff25963a49aae",
+    "timestamp": "2025-07-31T06:56:47.650974",
+    "source_file": "CLAUDE.en.md"
+  },
+  "CLAUDE.en.md": {
+    "hash": "d357851fba33a1dc407e489353a3056a",
+    "commit": "a9f041de05b1d7fb6af18c78e02ff25963a49aae",
+    "timestamp": "2025-07-31T06:56:47.650982"
   }
 }
