@@ -198,10 +198,12 @@ jobs:
 
       - name: Run specific pre-commit fixes
         run: |
-          # Run only trailing whitespace fix for markdown files
-          pre-commit run trailing-whitespace --all-files || true
-          # Run only end-of-file fixer
-          pre-commit run end-of-file-fixer --all-files || true
+          # Get all .md and .json files that exist
+          FILES=$(git ls-files | grep -E '\.(md|json)$' | tr '\n' ' ')
+          if [[ -n "$FILES" ]]; then
+            pre-commit run trailing-whitespace --files $FILES || true
+            pre-commit run end-of-file-fixer --files $FILES || true
+          fi
 
       - name: Commit post-translation fixes
         run: |
@@ -217,4 +219,4 @@ jobs:
             fi
           else
             echo "No post-translation fixes needed"
-          fi    
+          fi
