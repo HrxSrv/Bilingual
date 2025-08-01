@@ -1,1 +1,1 @@
-This is the README for the test.
+This is a README for testing purposes.
