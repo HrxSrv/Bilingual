@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "bilingual"  # or whatever your project name is
+version = "0.1.0"
+description = ""
+authors = ["Your Name harshit@gmail.com"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+# Add your other dependencies here
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.0.0"
+# Add your other dev dependencies here
