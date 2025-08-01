@@ -1,7 +1,6 @@
 import os
 
 import pytest
-
 from app.services.clustering.handlers import clustering_async
 from app.services.clustering.models.request import ClusteringRequest
 

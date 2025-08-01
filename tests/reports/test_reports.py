@@ -2,14 +2,11 @@ import json
 import os
 
 from app.services.reports import reports
-from app.services.reports.models import (
-    CreateCustomRequest,
-    CreateDecisionsRequest,
-    CreateReportRequest,
-    CreateStatementsRequest,
-    CreateTodosRequest,
-    NoteInput,
-)
+from app.services.reports.models import (CreateCustomRequest,
+                                         CreateDecisionsRequest,
+                                         CreateReportRequest,
+                                         CreateStatementsRequest,
+                                         CreateTodosRequest, NoteInput)
 
 
 def load_json(filename):

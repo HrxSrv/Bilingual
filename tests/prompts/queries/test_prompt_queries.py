@@ -2,11 +2,11 @@ import json
 import os
 
 import pytest
-
 from app.core.chains import ChainManager
 from app.initializers.env import load_env
 from app.services.prompt_executor import prompt_execute_async
 from app.services.prompt_executor.models import PromptRequest
+
 from tests.utils import normalize_answer
 from tests.utils.template import about_same_meaning_prompt
 
