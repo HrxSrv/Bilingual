@@ -1,0 +1,35 @@
+name: Pre-commit checks & Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.10"
+
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+
+      - name: Install dependencies
+        run: |
+          poetry install
+
+      - name: Run pre-commit
+        run: |
+          poetry run pre-commit run --all-files
+
+      - name: Run tests
+        run: |
+          BUCKET_NAME="" sh tools/test.sh

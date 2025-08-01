@@ -1,8 +1,8 @@
 # プロジェクト名
 
-このプロジェクトは、サンプルの日本語READMEファイルです。
+このプロジェクトはサンプルの日本語READMEファイルです。
 
-## 📦 インストール方法
+## 📦 インストール手順
 
 以下のコマンドを使用してインストールしてください。
 
@@ -10,4 +10,4 @@
 git clone https://github.com/your-username/your-project.git
 cd your-project
 npm install  
-                  
+```
