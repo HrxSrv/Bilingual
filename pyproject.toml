@@ -1,3 +1,5 @@
+package-mode = false
+
 [tool.poetry]
 name = "bilingual"  # or whatever your project name is
 version = "0.1.0"
