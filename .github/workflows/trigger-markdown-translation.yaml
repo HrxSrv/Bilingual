@@ -159,8 +159,53 @@ jobs:
             echo "is_initial_setup=false" >> $GITHUB_OUTPUT
           fi
 
-  trigger-markdown-translation:
+  pre-commit-fixes:
     needs: check-markdown-changes
+    if: needs.check-markdown-changes.outputs.has_changes == 'true' && needs.check-markdown-changes.outputs.skip_translation == 'false'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+          ref: ${{ github.head_ref || github.ref }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+
+      - name: Install dependencies
+        run: |
+          poetry install
+
+      - name: Run pre-commit fixes
+        run: |
+          poetry run pre-commit run --all-files || true
+
+      - name: Commit formatting fixes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add .
+            git commit -m "Auto-fix formatting issues [skip-translation]"
+            if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+              git push origin HEAD:${{ github.head_ref }}
+            else
+              git push
+            fi
+          else
+            echo "No formatting changes needed"
+          fi
+
+  trigger-markdown-translation:
+    needs: [check-markdown-changes, pre-commit-fixes]
     if: needs.check-markdown-changes.outputs.has_changes == 'true' && needs.check-markdown-changes.outputs.skip_translation == 'false'
     uses: rimoapp/bilingual-github/.github/workflows/translate-markdown.yml@main
     secrets:

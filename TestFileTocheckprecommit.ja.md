@@ -1,0 +1,1 @@
+これは、translate-md.yaml に追加した precommit 関数が動作しているかどうかを確認するためのものです。
