@@ -1,0 +1,45 @@
+{
+  "title": "Product Launch and Campaign Budget Planning",
+  "error": "",
+  "decisions": [
+    {
+      "decision": "Launch the new product in the upcoming quarter with John creating the marketing plan and an August 1 deadline.",
+      "meeting": "Meeting on July 7, 2024",
+      "notes": [
+        {
+          "note_id": "4UcUQf1WBwxWFH2S0hlq",
+          "status": "Decided",
+          "excerpt": "The team decided to launch the new product next quarter. John will prepare the marketing plan. The deadline is August 1st.",
+          "timestamp": "2024-07-07T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "decision": "Secure stakeholder approval for the initial campaign design by next week and schedule a review meeting for Friday.",
+      "meeting": "Campaign Review and Budget Planning",
+      "notes": [
+        {
+          "note_id": "E1pAdM8o4Nf8VtRJmNOu",
+          "status": "Action Items",
+          "excerpt": "We need to get stakeholder approval by next week.",
+          "timestamp": "2024-07-08T14:00:00Z"
+        },
+        {
+          "note_id": "E1pAdM8o4Nf8VtRJmNOu",
+          "status": "Action Items",
+          "excerpt": "I'll schedule the review meeting with the stakeholders for Friday.",
+          "timestamp": "2024-07-08T14:15:00Z"
+        }
+      ]
+    }
+  ],
+  "model": "o1-2024-12-17",
+  "usage": {
+    "input_tokens": 1033,
+    "output_tokens": 3687,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": null,
+    "image_tokens": null,
+    "cost": 0.236715
+  }
+}

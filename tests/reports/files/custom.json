@@ -1,0 +1,42 @@
+{
+  "error": "",
+  "data": {
+    "title": "Comprehensive Update on Product Launch and Campaign Planning",
+    "summary": "Across the meetings, the team solidified a plan to launch a new product next quarter, set key deadlines for the marketing plan, and began finalizing the campaign design and budget. Stakeholder feedback and approval emerged as critical next steps, while scheduling considerations and recommended budget shifts were also highlighted.",
+    "sections": [
+      {
+        "heading": "Product Launch and Campaign Developments",
+        "bullet_points": [
+          "The team decided to launch the new product next quarter, indicating a major milestone in overall project planning.",
+          "John was assigned to prepare the marketing plan with a hard deadline of August 1st to ensure timely execution.",
+          "Discussions around budgetary requirements highlighted the need to assess funding for the new campaign effectively.",
+          "Marketing team progress included the completion of the initial campaign design, representing a key step forward.",
+          "Stakeholder approval was identified as a pivotal prerequisite, with a target deadline set for next week.",
+          "Lisa recommended an increased investment in digital marketing to enhance campaign performance in the upcoming launch.",
+          "The broader meeting aim emphasized reviewing campaign progress and budget allocation to align with strategic objectives."
+        ]
+      },
+      {
+        "heading": "Scheduling, Approvals, and Next Steps",
+        "bullet_points": [
+          "Mike volunteered to schedule the review meeting with stakeholders on Friday to facilitate feedback and final decisions.",
+          "The official meeting topic was noted as Campaign Review and Budget Planning, underscoring the session’s focus points.",
+          "Meeting records indicate the date of July 8th, 2024, for key discussions impacting upcoming operational timelines.",
+          "A critical takeaway was the requirement for stakeholder approval before progressing to finalizing the campaign’s launch activities.",
+          "Editor inputs confirmed that the campaign design is ready for review, reinforcing the importance of timely stakeholder engagement.",
+          "The concise meeting memo highlighted that stakeholder approval is needed by next week, amplifying a sense of urgency.",
+          "Budget considerations emerged as a shared priority across both meetings, ensuring that financial planning aligns with strategic goals."
+        ]
+      }
+    ]
+  },
+  "model": "o1-2024-12-17",
+  "usage": {
+    "input_tokens": 815,
+    "output_tokens": 1670,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": null,
+    "image_tokens": null,
+    "cost": 0.112425
+  }
+}
