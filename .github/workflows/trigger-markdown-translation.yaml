@@ -192,17 +192,16 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install Poetry
+      - name: Install pre-commit
         run: |
-          curl -sSL https://install.python-poetry.org | python3 -
+          pip install pre-commit
 
-      - name: Install dependencies
+      - name: Run specific pre-commit fixes
         run: |
-          poetry install
-
-      - name: Run pre-commit fixes
-        run: |
-          poetry run pre-commit run --all-files || true
+          # Run only trailing whitespace fix for markdown files
+          pre-commit run trailing-whitespace --all-files || true
+          # Run only end-of-file fixer
+          pre-commit run end-of-file-fixer --all-files || true
 
       - name: Commit post-translation fixes
         run: |
