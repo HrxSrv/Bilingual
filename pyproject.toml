@@ -7,6 +7,7 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
+pytest = "^7.0.0"
 # Add your other dependencies here
 
 [tool.poetry.group.dev.dependencies]
