@@ -1,0 +1,79 @@
+{
+  "title": "Campaign Review and Budget Planning",
+  "error": "",
+  "action_items": [
+    {
+      "action_item": "Launch the new product next quarter",
+      "owner": "Unassigned",
+      "due": "",
+      "notes": [
+        {
+          "note_id": "4UcUQf1WBwxWFH2S0hlq",
+          "status": "Decided",
+          "excerpt": "The team decided to launch the new product next quarter.",
+          "timestamp": "2024-07-07T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "action_item": "Prepare the marketing plan",
+      "owner": "John",
+      "due": "2024-08-01",
+      "notes": [
+        {
+          "note_id": "4UcUQf1WBwxWFH2S0hlq",
+          "status": "Open",
+          "excerpt": "John will prepare the marketing plan. The deadline is August 1st.",
+          "timestamp": "2024-07-07T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "action_item": "Obtain stakeholder approval for the campaign design",
+      "owner": "Unassigned",
+      "due": "By next week",
+      "notes": [
+        {
+          "note_id": "E1pAdM8o4Nf8VtRJmNOu",
+          "status": "Open",
+          "excerpt": "We need to get stakeholder approval by next week.",
+          "timestamp": "2024-07-08T14:00:00Z"
+        }
+      ]
+    },
+    {
+      "action_item": "Schedule the review meeting with stakeholders for Friday",
+      "owner": "Mike",
+      "due": "Friday",
+      "notes": [
+        {
+          "note_id": "E1pAdM8o4Nf8VtRJmNOu",
+          "status": "Open",
+          "excerpt": "I'll schedule the review meeting with the stakeholders for Friday.",
+          "timestamp": "2024-07-08T14:15:00Z"
+        }
+      ]
+    },
+    {
+      "action_item": "Review and finalize the budget for the new campaign, considering increased digital marketing spend",
+      "owner": "Unassigned",
+      "due": "",
+      "notes": [
+        {
+          "note_id": "4UcUQf1WBwxWFH2S0hlq",
+          "status": "Open",
+          "excerpt": "We need to review the budget for the new campaign.",
+          "timestamp": "2024-07-07T10:05:00Z"
+        },
+        {
+          "note_id": "E1pAdM8o4Nf8VtRJmNOu",
+          "status": "Updated",
+          "excerpt": "The budget allocation looks good, but we should consider increasing the digital marketing spend.",
+          "timestamp": "2024-07-08T14:30:00Z"
+        }
+      ]
+    }
+  ],
+  "model": "",
+  "usage": null
+}

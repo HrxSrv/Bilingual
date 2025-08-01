@@ -1,0 +1,45 @@
+{
+  "title": "Campaign Launch and Budget Planning",
+  "error": "",
+  "statements": [
+    {
+      "statement": "The team decided to launch the new product next quarter. John will prepare the marketing plan. The deadline is August 1st.",
+      "speaker": "Alice",
+      "note_id": "4UcUQf1WBwxWFH2S0hlq",
+      "timestamp": "2024-07-07T10:00:00Z"
+    },
+    {
+      "statement": "We need to review the budget for the new campaign.",
+      "speaker": "Bob",
+      "note_id": "4UcUQf1WBwxWFH2S0hlq",
+      "timestamp": "2024-07-07T10:05:00Z"
+    },
+    {
+      "statement": "The marketing team has completed the initial campaign design. We need to get stakeholder approval by next week.",
+      "speaker": "Sarah",
+      "note_id": "E1pAdM8o4Nf8VtRJmNOu",
+      "timestamp": "2024-07-08T14:00:00Z"
+    },
+    {
+      "statement": "I'll schedule the review meeting with the stakeholders for Friday.",
+      "speaker": "Mike",
+      "note_id": "E1pAdM8o4Nf8VtRJmNOu",
+      "timestamp": "2024-07-08T14:15:00Z"
+    },
+    {
+      "statement": "The budget allocation looks good, but we should consider increasing the digital marketing spend.",
+      "speaker": "Lisa",
+      "note_id": "E1pAdM8o4Nf8VtRJmNOu",
+      "timestamp": "2024-07-08T14:30:00Z"
+    }
+  ],
+  "model": "o1-2024-12-17",
+  "usage": {
+    "input_tokens": 1015,
+    "output_tokens": 1882,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": null,
+    "image_tokens": null,
+    "cost": 0.12814499999999998
+  }
+}

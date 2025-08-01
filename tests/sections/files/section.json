@@ -1,0 +1,31 @@
+{
+    "topics": [
+        {
+            "title": "Pipeline Review and Application",
+            "content": "- There was a discussion about the pipeline review, mentioning collaboration with PMS and NPO.\n- The development status of POC (Proof of Concept) was discussed, and challenges related to an app for uploading IP were pointed out.\n- A discussion related to EBM (Evidence-Based Medicine) emphasized the importance of data utilization.\n- There were mentions of biomarkers and GMP, with discussions on quality control in research and development.\n- Information was shared about pipeline training members.",
+            "startTime": 160,
+            "subTopics":[]
+        },
+        {
+            "title": "Project Kickoff Introduction",
+            "content": "",
+            "startTime": 120000,
+            "subTopics": [
+              {
+                "subTitle": "Team Introductions",
+                "content": "- John introduced himself as the project manager\n- Sarah is the lead developer\n- Michael joined as UX designer"
+              },
+              {
+                "subTitle": "Project Timeline Overview",
+                "content": "- Six-month development cycle proposed\n- Beta release scheduled for month 4\n- Final delivery expected by December"
+              }
+            ]
+          },
+          {
+            "title": "Budget Discussion",
+            "content": "- Total budget approved at $250,000\n- Hardware purchases need separate approval\n- Monthly spending reports required",
+            "startTime": 600000,
+            "subTopics": []
+          }
+    ]
+}

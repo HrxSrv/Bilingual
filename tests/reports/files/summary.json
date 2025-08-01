@@ -1,0 +1,199 @@
+{
+  "error": "",
+  "report": {
+    "overall_topic": "Strategic Launch Planning and Campaign Budgeting",
+    "meetings_included": [
+      {
+        "topic": "New Product Launch and Budget Discussion",
+        "date": "2024-07-07",
+        "noteid": "4UcUQf1WBwxWFH2S0hlq"
+      },
+      {
+        "topic": "Campaign Review and Budget Planning",
+        "date": "2024-07-08",
+        "noteid": "E1pAdM8o4Nf8VtRJmNOu"
+      }
+    ],
+    "executive_summary": "Over the course of these meetings, the team established a clear schedule to launch a new product next quarter and identified key marketing milestones. The first discussion finalized the decision for a next-quarter launch, tasked John with preparing a marketing plan by August 1st, and flagged the need to review the campaign budget. The subsequent meeting confirmed that the marketing team completed an initial campaign design, requiring stakeholder approval by the following week. Budget reviews continued, with Lisa highlighting the possibility of increasing digital marketing spending. A stakeholder review meeting is to be scheduled for Friday, with final budget allocations pending confirmation. Overall, the discussions emphasize timely preparation for the launch, thorough budget planning, and coordinated stakeholder engagement to ensure a successful campaign rollout.",
+    "themes": [
+      {
+        "theme": "Product Launch and Marketing Plan",
+        "evolution": "Initially, the team set a product launch for next quarter and assigned a marketing plan development. In the next meeting, the preliminary marketing design was completed and stakeholder approval became a priority.",
+        "notes": [
+          {
+            "note_id": "4UcUQf1WBwxWFH2S0hlq",
+            "status": "Discussed",
+            "excerpt": "The team decided to launch the new product next quarter. John will prepare the marketing plan.",
+            "timestamp": "2024-07-07T10:00:00Z"
+          },
+          {
+            "note_id": "E1pAdM8o4Nf8VtRJmNOu",
+            "status": "Progress",
+            "excerpt": "The marketing team has completed the initial campaign design.",
+            "timestamp": "2024-07-08T14:00:00Z"
+          }
+        ]
+      },
+      {
+        "theme": "Budget Review and Allocation",
+        "evolution": "The first meeting noted the need to review the new campaign budget. Later, it was affirmed that the current allocation is viable, but increasing digital marketing spend is under consideration.",
+        "notes": [
+          {
+            "note_id": "4UcUQf1WBwxWFH2S0hlq",
+            "status": "Discussed",
+            "excerpt": "We need to review the budget for the new campaign.",
+            "timestamp": "2024-07-07T10:05:00Z"
+          },
+          {
+            "note_id": "E1pAdM8o4Nf8VtRJmNOu",
+            "status": "Discussed",
+            "excerpt": "The budget allocation looks good, but we should consider increasing the digital marketing spend.",
+            "timestamp": "2024-07-08T14:30:00Z"
+          }
+        ]
+      }
+    ],
+    "summary_decisions": [
+      {
+        "decision": "Launch the new product next quarter",
+        "details": "The team agreed on a timeline to release the product in the upcoming quarter, aligning marketing efforts to meet that schedule.",
+        "meeting": "New Product Launch and Budget Discussion",
+        "notes": [
+          {
+            "note_id": "4UcUQf1WBwxWFH2S0hlq",
+            "status": "Agreed",
+            "excerpt": "The team decided to launch the new product next quarter.",
+            "timestamp": "2024-07-07T10:00:00Z"
+          }
+        ]
+      }
+    ],
+    "summary_action_items": [
+      {
+        "action_item": "Prepare the marketing plan",
+        "owner": "John",
+        "due": "2024-08-01",
+        "status": "In Progress",
+        "origin": "New Product Launch and Budget Discussion",
+        "notes": [
+          {
+            "note_id": "4UcUQf1WBwxWFH2S0hlq",
+            "status": "Assigned",
+            "excerpt": "John will prepare the marketing plan. The deadline is August 1st.",
+            "timestamp": "2024-07-07T10:00:00Z"
+          }
+        ]
+      },
+      {
+        "action_item": "Review the budget for the new campaign",
+        "owner": "Bob",
+        "due": "",
+        "status": "Pending",
+        "origin": "New Product Launch and Budget Discussion",
+        "notes": [
+          {
+            "note_id": "4UcUQf1WBwxWFH2S0hlq",
+            "status": "Discussed",
+            "excerpt": "We need to review the budget for the new campaign.",
+            "timestamp": "2024-07-07T10:05:00Z"
+          }
+        ]
+      },
+      {
+        "action_item": "Schedule the review meeting with stakeholders",
+        "owner": "Mike",
+        "due": "Friday",
+        "status": "Pending",
+        "origin": "Campaign Review and Budget Planning",
+        "notes": [
+          {
+            "note_id": "E1pAdM8o4Nf8VtRJmNOu",
+            "status": "Proposed",
+            "excerpt": "I'll schedule the review meeting with the stakeholders for Friday.",
+            "timestamp": "2024-07-08T14:15:00Z"
+          }
+        ]
+      },
+      {
+        "action_item": "Obtain stakeholder approval",
+        "owner": "Sarah",
+        "due": "2024-07-15",
+        "status": "Pending",
+        "origin": "Campaign Review and Budget Planning",
+        "notes": [
+          {
+            "note_id": "E1pAdM8o4Nf8VtRJmNOu",
+            "status": "Necessary",
+            "excerpt": "We need to get stakeholder approval by next week.",
+            "timestamp": "2024-07-08T14:00:00Z"
+          }
+        ]
+      },
+      {
+        "action_item": "Evaluate possibility of increasing the digital marketing spend",
+        "owner": "Lisa",
+        "due": "",
+        "status": "Pending",
+        "origin": "Campaign Review and Budget Planning",
+        "notes": [
+          {
+            "note_id": "E1pAdM8o4Nf8VtRJmNOu",
+            "status": "Suggested",
+            "excerpt": "We should consider increasing the digital marketing spend.",
+            "timestamp": "2024-07-08T14:30:00Z"
+          }
+        ]
+      }
+    ],
+    "developments": [
+      {
+        "development": "Commitment to next-quarter product launch",
+        "impact": "Sets the timeline for finalizing marketing strategies and promotional activities.",
+        "speaker": "Alice",
+        "notes": [
+          {
+            "note_id": "4UcUQf1WBwxWFH2S0hlq",
+            "status": "Announcement",
+            "excerpt": "The team decided to launch the new product next quarter.",
+            "timestamp": "2024-07-07T10:00:00Z"
+          }
+        ]
+      },
+      {
+        "development": "Initial campaign design completion",
+        "impact": "Enables the team to move forward with stakeholder approval processes and final budget decisions.",
+        "speaker": "Sarah",
+        "notes": [
+          {
+            "note_id": "E1pAdM8o4Nf8VtRJmNOu",
+            "status": "Update",
+            "excerpt": "The marketing team has completed the initial campaign design.",
+            "timestamp": "2024-07-08T14:00:00Z"
+          }
+        ]
+      },
+      {
+        "development": "Recommendation to increase digital marketing spend",
+        "impact": "Potential reallocation of resources to amplify online reach and engagement, affecting overall campaign budgeting.",
+        "speaker": "Lisa",
+        "notes": [
+          {
+            "note_id": "E1pAdM8o4Nf8VtRJmNOu",
+            "status": "Suggestion",
+            "excerpt": "The budget allocation looks good, but we should consider increasing the digital marketing spend.",
+            "timestamp": "2024-07-08T14:30:00Z"
+          }
+        ]
+      }
+    ]
+  },
+  "model": "o1-2024-12-17",
+  "usage": {
+    "input_tokens": 2131,
+    "output_tokens": 5261,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": null,
+    "image_tokens": null,
+    "cost": 0.347625
+  }
+}
