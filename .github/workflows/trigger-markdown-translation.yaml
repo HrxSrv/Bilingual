@@ -159,8 +159,24 @@ jobs:
             echo "is_initial_setup=false" >> $GITHUB_OUTPUT
           fi
 
-  pre-commit-fixes:
-    needs: check-markdown-changes
+
+  trigger-markdown-translation:
+      needs: check-markdown-changes
+      if: needs.check-markdown-changes.outputs.has_changes == 'true' && needs.check-markdown-changes.outputs.skip_translation == 'false'
+      uses: rimoapp/bilingual-github/.github/workflows/translate-markdown.yml@main
+      secrets:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      with:
+        is_initial_setup: ${{ needs.check-markdown-changes.outputs.is_initial_setup == 'true' }}
+        changed_files: ${{ needs.check-markdown-changes.outputs.changed_files }}
+        deleted_files: ${{ needs.check-markdown-changes.outputs.deleted_files }}
+        commit_hash: ${{ github.sha }}
+        is_pr: ${{ needs.check-markdown-changes.outputs.is_pr == 'true' }}
+        pr_number: ${{ needs.check-markdown-changes.outputs.pr_number }}
+        target_branch: ${{ needs.check-markdown-changes.outputs.target_branch }}
+  
+  post-translation-fixes:
+    needs: [check-markdown-changes, trigger-markdown-translation]
     if: needs.check-markdown-changes.outputs.has_changes == 'true' && needs.check-markdown-changes.outputs.skip_translation == 'false'
     runs-on: ubuntu-latest
     steps:
@@ -188,33 +204,18 @@ jobs:
         run: |
           poetry run pre-commit run --all-files || true
 
-      - name: Commit formatting fixes
+      - name: Commit post-translation fixes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           if [[ -n "$(git status --porcelain)" ]]; then
             git add .
-            git commit -m "Auto-fix formatting issues [skip-translation]"
+            git commit -m "Post-translation formatting fixes [skip-translation]"
             if [[ "${{ github.event_name }}" == "pull_request" ]]; then
               git push origin HEAD:${{ github.head_ref }}
             else
               git push
             fi
           else
-            echo "No formatting changes needed"
+            echo "No post-translation fixes needed"
           fi
-
-  trigger-markdown-translation:
-    needs: [check-markdown-changes, pre-commit-fixes]
-    if: needs.check-markdown-changes.outputs.has_changes == 'true' && needs.check-markdown-changes.outputs.skip_translation == 'false'
-    uses: rimoapp/bilingual-github/.github/workflows/translate-markdown.yml@main
-    secrets:
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-    with:
-      is_initial_setup: ${{ needs.check-markdown-changes.outputs.is_initial_setup == 'true' }}
-      changed_files: ${{ needs.check-markdown-changes.outputs.changed_files }}
-      deleted_files: ${{ needs.check-markdown-changes.outputs.deleted_files }}
-      commit_hash: ${{ github.sha }}
-      is_pr: ${{ needs.check-markdown-changes.outputs.is_pr == 'true' }}
-      pr_number: ${{ needs.check-markdown-changes.outputs.pr_number }}
-      target_branch: ${{ needs.check-markdown-changes.outputs.target_branch }}
