@@ -285,5 +285,16 @@
     "commit": "964a3a2109bf16b8fd2979215a75e7e669419363",
     "timestamp": "2025-08-01T09:08:30.811742",
     "source_file": "Test1/Readme.ja.md"
+  },
+  "TestFileTocheckprecommit.ja.md": {
+    "hash": "fa8f0f4674ee6289073f461a1fdb80d1",
+    "commit": "acb9441f65d62a35758c417f8855e001f30dbfc0",
+    "timestamp": "2025-08-01T10:09:06.788479",
+    "source_file": "TestFileTocheckprecommit.en.md"
+  },
+  "TestFileTocheckprecommit.en.md": {
+    "hash": "cf724cc0c527d32a274f12fdd731ead3",
+    "commit": "acb9441f65d62a35758c417f8855e001f30dbfc0",
+    "timestamp": "2025-08-01T10:09:06.788493"
   }
 }
