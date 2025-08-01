@@ -1,1 +1,1 @@
-Translate to Hinid
+Translate to Hindi
