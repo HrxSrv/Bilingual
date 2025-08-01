@@ -1,1 +1,1 @@
-Translate to Japanses  
+Translate to Hinid
