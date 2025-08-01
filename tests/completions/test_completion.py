@@ -1,14 +1,10 @@
 import json
 
 import pytest
-
 from app.core.llm import get_llm_info
-from app.core.models.gen_ai import (
-    ChatCompletionsRequest,
-    FunctionToolRequest,
-    MessageRequest,
-    WebSearchToolRequest,
-)
+from app.core.models.gen_ai import (ChatCompletionsRequest,
+                                    FunctionToolRequest, MessageRequest,
+                                    WebSearchToolRequest)
 from app.services.completions.completion import stream
 
 

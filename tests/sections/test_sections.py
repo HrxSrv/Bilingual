@@ -2,7 +2,6 @@ import json
 import os
 
 import pytest
-
 from app.initializers.env import load_env
 
 load_env()

@@ -8,6 +8,12 @@ package-mode = false
 [tool.poetry.dependencies]
 python = "^3.10"
 pytest = "^7.0.0"
+black = "^23.0.0"
+autoflake = "^2.0.0"
+isort = "^5.0.0"
+flake8 = "^6.0.0"
+bandit = "^1.7.0"
+mypy = "^1.0.0"
 # Add your other dependencies here
 
 [tool.poetry.group.dev.dependencies]

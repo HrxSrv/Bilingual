@@ -3,6 +3,7 @@ import os
 from app.core.chains import ChainManager
 from app.initializers.env import load_env
 from app.services.clustering.templates import header_stream_prompt
+
 from tests.utils import normalize_answer
 from tests.utils.template import about_same_meaning_prompt
 
