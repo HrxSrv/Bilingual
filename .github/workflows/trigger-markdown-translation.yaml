@@ -169,6 +169,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
+          ref: ${{ github.head_ref || github.ref }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -194,7 +195,11 @@ jobs:
           if [[ -n "$(git status --porcelain)" ]]; then
             git add .
             git commit -m "Auto-fix formatting issues [skip-translation]"
-            git push
+            if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+              git push origin HEAD:${{ github.head_ref }}
+            else
+              git push
+            fi
           else
             echo "No formatting changes needed"
           fi
