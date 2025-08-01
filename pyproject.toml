@@ -1,10 +1,9 @@
-package-mode = false
-
 [tool.poetry]
-name = "bilingual"  # or whatever your project name is
+name = "bilingual"
 version = "0.1.0"
 description = ""
-authors = ["Your Name harshit@gmail.com"]
+authors = ["Your Name <harshit@gmail.com>"]
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
